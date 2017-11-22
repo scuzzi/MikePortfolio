@@ -1,0 +1,117 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+#cover{
+	
+	background-position: center;
+    background-repeat: no-repeat;
+  	background-size: cover;
+    height: 100vh;
+    background-image: url("../pics/richmondva2.jpg");
+  
+    /*000033*/
+}
+	
+. navbar-header, a{
+	color: white;
+}
+
+#overlay{
+	height:100vh;
+	width:auto;
+	background-color:#1d1d1e; /*#909f9d gray*/
+	opacity: .8;
+	overflow: none;
+
+}
+
+
+
+
+#overlay h1{
+
+	text-align: center;
+	padding-top: 20%;
+	color: #908e96;
+	font-size: 6rem;
+	
+}
+
+#navsect{
+
+}
+
+#navsect li a{
+
+	color: white;
+	font-weight: bold;
+}
+
+#navsect li a:hover{
+	text-decoration: underline;
+	color: yellow;
+	
+
+}
+
+#abt{
+	
+	background-color: #37393a /*#3e4042*/;
+	height:500px;
+
+	width: auto;
+}
+
+#bg{
+	height:500px;
+	background-color:black;
+}
+
+
+#headCont h1{
+	color: white;
+	font-weight: bold;
+	font-family: serif;
+	text-align: center;
+	padding-top: 25vh;
+	display: flex;
+	flex-direction: column;
+}	
+
+#abtdiv, p {
+	color: white;
+	padding-top: 60px;	
+	text-align: center;
+}
+#abtdiv2, p {
+	color: white;
+	padding-top: 60px;	
+	text-align: center;
+}
+#abthdr{
+	
+	color: white;
+	
+}
+
+.navbar{
+	border-style: solid;
+	border-color:green;
+}
+
+
+
+
+#video-bg{
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+
+}
