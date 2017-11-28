@@ -73,11 +73,14 @@
 #headCont h1{
 	color: white;
 	font-weight: bold;
-	font-family: serif;
+	font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
 	text-align: center;
-	padding-top: 25vh;
+	padding-top: 5vh;
 	display: flex;
 	flex-direction: column;
+	font-size: 150px;
+	 text-shadow: 3px 2px 2px black;
+
 }	
 
 
@@ -135,6 +138,7 @@
   border-top: 0;
   text-align:right;
   background-color:black;
+  border-color: red;
 
 }
 
