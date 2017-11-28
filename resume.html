@@ -20,8 +20,9 @@
 <div id = "cover">
 
 	<div id = "overlay">
-		<nav class="navbar navbar-default " role="navigation" style="background-color: transparent; border-width: 0; ">
-			<div class = "container-fluid">
+		
+		<nav class="navbar navbar-default " role="navigation" style="background-color: transparent; border-width: 0; " id = "stickyNav">
+			<div class = "container-fluid" id = "navCont">
 
   				<div class="navbar-header">
     				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,8 +47,9 @@
 		</nav>
 		
 		<div id ="headCont">
-			<h1> <u>Michael C. Smith II</u> </h1>
-			<p></p>
+			<h1>Designs</h1>
+			<h1>By</h1>
+			<h1>MCS</h1>
    		</div>
 	</div>
 
@@ -61,13 +63,13 @@
 		
 	<h3 class = "text-center" id = "abthdr"> <u>About Michael</u> </h3>
 	</div>
-		<div class = "container-fluid">
-		<div class = "col-md-4" id = "abtdiv">
+		<div class = "container-fluid" id = "abtContain">
+		
 		<p>Donec faucibus libero eleifend orci scelerisque, nec iaculis lectus lobortis. Donec gravida, neque maximus porttitor semper, nunc neque tincidunt ligula, nec ornare diam dui quis odio. Sed vehicula magna eu justo commodo, in ornare nulla condimentum. Donec at commodo lacus, in semper purus. Vivamus ac libero consectetur nunc varius dignissim a at lectus. Donec sapien augue, molestie nec volutpat tristique, ornare id felis. Quisque interdum purus at placerat placerat. Suspendisse non dictum dui. Nunc ut gravida ipsum, lacinia dictum metus. Sed tincidunt euismod quam quis vulputate.</p>
-		</div>
-		<div class = "col-md-4" id = "abtdiv2">
+	
+		
 				<p>Donec faucibus libero eleifend orci scelerisque, nec iaculis lectus lobortis. Donec gravida, neque maximus porttitor semper, nunc neque tincidunt ligula, nec ornare diam dui quis odio. Sed vehicula magna eu justo commodo, in ornare nulla condimentum. Donec at commodo lacus, in semper purus. Vivamus ac libero consectetur nunc varius dignissim a at lectus. Donec sapien augue, molestie nec volutpat tristique, ornare id felis. Quisque interdum purus at placerat placerat. Suspendisse non dictum dui. Nunc ut gravida ipsum, lacinia dictum metus. Sed tincidunt euismod quam quis vulputate.</p>
-		</div>
+		
 	</div>
 
 	</div>
@@ -82,6 +84,67 @@
 
 
 <script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+		$(document).ready(function(){
+
+					$('#headCont').fadeOut();
+
+			/*	var stickyHeaderTop = $('#stickyNav').offset().top;
+
+					 $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyHeaderTop){
+                        $('#stickyNav' ).css({position: 'fixed', top: '0px'});
+                        $('#stickyNav').css('opacity', '1')
+
+                } else {
+                        $('#stickyNav').css({position: 'static', top: '300px'});
+                        $('#stickyNav').css('opacity', '1');
+                }
+        });
+        */
+        var stickyNavTop = $('#stickyNav').offset().top;
+       	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop();
+
+			    	if (scrollTop > stickyNavTop) { 
+			        $('#navCont').addClass('sticky');
+			    } else {
+			        $('#navCont').removeClass('sticky'); 
+			    }
+			};
+
+			// and run it again every time you scroll
+			
+		
+
+	$(window).scroll(function() {
+				stickyNav();
+			});
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+ 
+
+
+</script>
 </body>
 </html>
 

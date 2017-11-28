@@ -80,6 +80,15 @@
 	flex-direction: column;
 }	
 
+
+
+#abtContain{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+
+}
+
 #abtdiv, p {
 	color: white;
 	padding-top: 60px;	
@@ -115,3 +124,17 @@
   z-index: -100;
 
 }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  text-align:right;
+  background-color:black;
+
+}
+
