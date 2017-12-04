@@ -7,10 +7,15 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
-<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<!--<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+-->
+<!--<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> -->
 
 
+<!--<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet"> -->
 
+
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Libre+Barcode+39+Text|Orbitron" rel="stylesheet">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,7 +26,7 @@
 </head>
 
 
-<body>
+<body data-spy ="scroll" data-target = "#navCont" data-offset = "20">
 
 <div id = "cover">
 
@@ -31,32 +36,33 @@
 			<div class = "container-fluid" id = "navCont">
 
   				<div class="navbar-header">
-    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="color: black;">
      			 	<span class="icon-bar"></span>
       				<span class="icon-bar"></span>
      				<span class="icon-bar"></span>
     				</button>    
     				<a class="navbar-brand" href="#">MCS2</a>
  				 </div>
-  					<div class="navbar-collapse collapse">
+  					<div class="navbar-collapse collapse" style = "text-align: right;">
  
     					<ul class="nav navbar-nav navbar-right" id = "navsect" >
-					      <li><a href="#about">About</a></li>
-					      <li><a href="#contact">Background</a></li>
-					      <li><a href="#contact">Portfolio</a></li>
-					      <li><a href="#contact">Contact</a></li>
+					      <li><a id = "abtLink" href="#abt">About</a></li>
+					      <li><a id ="backgroundLink" href="#bg">Background</a></li>
+					      <li><a id ="portfolioLink" href="#collage">Portfolio</a></li>
+					      <li><a id ="contactLink" href="#">Contact</a></li>
     					</ul>
   					</div>
 
   			</div>
 
 		</nav>
-		
-		<div id ="headCont" style = "display: none;">
+		<div class ="container-fluid">
+		<div  id ="headCont" style = "display: none;">
 			<h1>Designs</h1>
 			<h1>By</h1>
 			<h1>MCS</h1>
    		</div>
+   	</div>
 	</div>
 
 		
@@ -85,8 +91,11 @@
 
 <div id = "bg">
 </div>	
+<div id = "collage">
+</div>	
+<div id = "contact">
 
-
+</div>
 
 
 <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -94,7 +103,11 @@
 
 		$(document).ready(function(){
 
-					$('#headCont').fadeIn(3000);
+					$('#headCont').fadeIn(5000);
+
+
+				
+
 
 			/*	var stickyHeaderTop = $('#stickyNav').offset().top;
 
@@ -126,7 +139,26 @@
 
 	$(window).scroll(function() {
 				stickyNav();
+					$('a[href^="#"]').click(function(){
+							$('html, body').animate({
+        						scrollTop: $("#bg").offset().top
+
+   					 		}, 2000);
+						
+
+
+
+						});	
+
+
+
+
 			});
+
+//
+				
+
+
 		});
 
 

@@ -1,16 +1,27 @@
+html *{
+	font-family: 'Audiowide', cursive;
 
-*{
-	margin:0;
-	padding:0;
 }
+html {
+	width: 100%;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 #cover{
-	
+	display: flex;
 	background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
   	background-size: cover;
     height: 100vh;
     background-image: url("../pics/richmondva2.jpg");
-  
+
     /*000033*/
 }
 	
@@ -24,7 +35,7 @@
 	background-color:#1d1d1e; /*#909f9d gray*/
 	opacity: .8;
 	overflow: none;
-
+	flex-grow: 1;
 }
 
 
@@ -39,8 +50,13 @@
 	
 }
 
-#navsect{
+.navbar-brand{
 
+ font-family: 'Audiowide', cursive;
+}
+
+#navsect{
+ font-family:arial;
 }
 
 #navsect li a{
@@ -61,7 +77,7 @@
 	background-color: #37393a /*#3e4042*/;
 	height:500px;
 
-	width: auto;
+	width: 100%;
 }
 
 #bg{
@@ -69,17 +85,28 @@
 	background-color:black;
 }
 
+#collage{
+	height: 500px;
+	background-color: red;
 
+}
+#contact{
+	background-color: blue;
+	
+}
 #headCont h1{
 	color: white;
 	font-weight: bold;
-	font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+	/*font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;*/
+	/*font-family: 'Orbitron', sans-serif;*/
+	/*font-family: 'Libre Barcode 39 Text', cursive;*/
+	font-family: 'Audiowide', cursive;
 	text-align: center;
 	padding-top: 5vh;
 	display: flex;
 	flex-direction: column;
 	font-size: 150px;
-	 text-shadow: 3px 2px 2px black;
+	 text-shadow: 5px 2px 2px black;
 
 }	
 
@@ -108,12 +135,6 @@
 	
 }
 
-.navbar{
-	border-style: solid;
-	border-color:green;
-}
-
-
 
 
 #video-bg{
@@ -134,7 +155,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: -100;
   border-top: 0;
   text-align:right;
   background-color:black;
@@ -142,3 +163,6 @@
 
 }
 
+#backgroundLink{
+	color:red;
+}
