@@ -74,32 +74,33 @@ html{
 
 .grid-container{
 	display: grid;
-	grid-template-rows: 200px;
+	grid-template-rows: 2fr 2fr 2fr;
 
 		}
+
+
+.txt_contain{
+	display: flex;
+	padding-bottom: 50px;
+}
+
 
 #abt{
 
 	
 	background-color: #37393a /*#3e4042*/;
-	height:500px;
-
-	width: 100%;
+	
 }
 
-#abt p{
-	grid-row-start:3;
-	grid-row-end: 1;
-}
 
 
 #bg{
-	height:500px;
+	
 	background-color:black;
 }
 
 #collage{
-	height: 500px;
+	
 	background-color: red;
 
 }
@@ -142,6 +143,7 @@ html{
 	padding-top: 60px;	
 	text-align: center;
 }
+
 #abthdr{
 	
 	color: white;
@@ -149,18 +151,6 @@ html{
 }
 
 
-
-#video-bg{
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-
-}
 
 .sticky {
   position: fixed;
