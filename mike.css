@@ -72,13 +72,26 @@ html{
 
 }
 
+.grid-container{
+	display: grid;
+	grid-template-rows: 200px;
+
+		}
+
 #abt{
+
 	
 	background-color: #37393a /*#3e4042*/;
 	height:500px;
 
 	width: 100%;
 }
+
+#abt p{
+	grid-row-start:3;
+	grid-row-end: 1;
+}
+
 
 #bg{
 	height:500px;
