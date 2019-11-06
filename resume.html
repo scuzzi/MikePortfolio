@@ -33,17 +33,17 @@
 	<div id = "overlay">
 		
 		<nav class="navbar navbar-default " role="navigation" style="background-color: transparent; border-width: 0; " id = "stickyNav">
-			<div class = "container-fluid" id = "navCont">
+			<nav class = "container-fluid" id = "navCont">
 
-  				<div class="navbar-header">
+  				<nav class="navbar-header">
     				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="color: black;">
      			 	<span class="icon-bar"></span>
       				<span class="icon-bar"></span>
      				<span class="icon-bar"></span>
     				</button>    
     				<a class="navbar-brand" href="#">MCS2</a>
- 				 </div>
-  					<div class="navbar-collapse collapse" style = "text-align: right;">
+ 				 </nav>
+  					<nav class="navbar-collapse collapse" style = "text-align: right;">
  
     					<ul class="nav navbar-nav navbar-right" id = "navsect" >
 					      <li><a id = "abtLink" href="#abt">About</a></li>
@@ -51,18 +51,18 @@
 					      <li><a id ="portfolioLink" href="#collage">Portfolio</a></li>
 					      <li><a id ="contactLink" href="#">Contact</a></li>
     					</ul>
-  					</div>
+  					</nav>
 
-  			</div>
+  			</nav>
 
 		</nav>
-		<div class ="container-fluid">
-		<div  id ="headCont" style = "display: none;">
+		
+		<div  id ="headCont">
 			<h1>Designs</h1>
 			<h1>By</h1>
 			<h1>MCS</h1>
    		</div>
-   	</div>
+   	
 	</div>
 
 		
@@ -76,30 +76,85 @@
 		
 	<h3 class = "text-center" id = "abthdr"> <u>About Michael</u> </h3>
 	
-	<div class ="txt_contain">
+
+
+
+
+
+	<div class ="txt_contain" id= "intro">
 		
-		<p>Donec faucibus libero eleifend orci scelerisque, nec iaculis lectus lobortis. Donec gravida, neque maximus porttitor semper, nunc neque tincidunt ligula, nec ornare diam dui quis odio. Sed vehicula magna eu justo commodo, in ornare nulla condimentum. Donec at commodo lacus, in semper purus. Vivamus ac libero consectetur nunc varius dignissim a at lectus. Donec sapien augue, molestie nec volutpat tristique, ornare id felis. Quisque interdum purus at placerat placerat. Suspendisse non dictum dui. Nunc ut gravida ipsum, lacinia dictum metus. Sed tincidunt euismod quam quis vulputate.</p>
+
+
+
+
+		<p> Hello there, My name is Michael Smith. I am an aspiring front-end developer and your IT Jack-OF-All Trades. Born and Raised from Richmond, Va (RVA!) and VCU Alum. I am on the never-ending jorney of learning and developing my skills no matter the discipline. "My bread and butter" as they say happens to be in I.T. By day I work as a Systems Administrator keeping an organization's systems running like a well oiled machine. By night I am teaching myself new skills, one of them can you guess?...Yes! Coding! Equipped with this new skill, I hope to be able to empower individuals who desire to develop a presence on the internet. Whether individual or a Business, I'm here to give you the advice and skill needed to get you on the web. If you think that sounds good to you and have a project that you would like to get started; shoot me an email and lets talk! The websites I create will be "by hand" meaning that your site may take longer to create but your site will be responsive and have it's own unique feel. No cookie cutters here! </p>
+	<div id = "signatureBlock">
+		<p>-Mike</p>
+	</div>
+	</div><!--end intro-->
 	
-			<p>Donec faucibus libero eleifend orci scelerisque, nec iaculis lectus lobortis. Donec gravida, neque maximus porttitor semper, nunc neque tincidunt ligula, nec ornare diam dui quis odio. Sed vehicula magna eu justo commodo, in ornare nulla condimentum. Donec at commodo lacus, in semper purus. Vivamus ac libero consectetur nunc varius dignissim a at lectus. Donec sapien augue, molestie nec volutpat tristique, ornare id felis. Quisque interdum purus at placerat placerat. Suspendisse non dictum dui. Nunc ut gravida ipsum, lacinia dictum metus. Sed tincidunt euismod quam quis vulputate.</p>
-				<p>Donec faucibus libero eleifend orci scelerisque, nec iaculis lectus lobortis. Donec gravida, neque maximus porttitor semper, nunc neque tincidunt ligula, nec ornare diam dui quis odio. Sed vehicula magna eu justo commodo, in ornare nulla condimentum. Donec at commodo lacus, in semper purus. Vivamus ac libero consectetur nunc varius dignissim a at lectus. Donec sapien augue, molestie nec volutpat tristique, ornare id felis. Quisque interdum purus at placerat placerat. Suspendisse non dictum dui. Nunc ut gravida ipsum, lacinia dictum metus. Sed tincidunt euismod quam quis vulputate.</p>
-		</div>
-	
+</div> <!--end grid-container-->
+
+
+
+<div id = "bg">
+	<h3 class = "text-center" id = "abthdr"> <u>Background</u> </h3>
+
+<div class="card">
+  <div class="ds-top"></div>
+  <div class="avatar-holder">
+    <img src="C:\Users\origi\OneDrive\Vaca\20180704_013232011_iOS.jpg">
+  </div>
+  <div class="name">
+    <a href="https://linkedin.com/in/michael-smith-ii-564b2878" target="_blank">Michael Smith II</a>
+  <h6>System Administrator</h6>
+  <h6>&</h6>
+  <h6>Front-End Developer </h6>
+ 
+  </div>
+  
+
+  <div class="ds-skill">
+    <h6>Skill/Confidence <i class="fa fa-code" aria-hidden="true"></i></h6>
+    <div class="skill html">
+      <h6><i class="fab fa-html5"></i> HTML5 </h6>
+      <div class="bar bar-html">
+        <p>95%</p>
+      </div>
+    </div>
+    <div class="skill css">
+      <h6><i class="fab fa-css3-alt"></i> CSS3 </h6>
+      <div class="bar bar-css">
+        <p>90%</p>
+      </div>
+    </div>
+    <div class="skill bootstrap">
+      <h6><i class="fab fa-js"></i> Bootstrap </h6>
+      <div class="bar bar-js">
+        <p>75%</p>
+      </div>
+    </div>
+    <div class="skill javascript">
+      <h6><i class="fab fa-js"></i> JavaScript </h6>
+      <div class="bar bar-js">
+        <p>75%</p>
+      </div>
+    </div>
+  </div>
+</div> <!--END CARD-->
 
 	
+<div id = "collage">
+	<p> test</p>	
+	</div>	
+<div id = "contact">
+
+	</div>
+<div id = "footer">
+		
+	</div>	
 
 
-</div>
-
-	<div id = "bg">
-		<h3 class = "text-center" id = "abthdr"> <u>Background</u> </h3>
-			</div>	
-	<div id = "collage">
-			</div>	
-		<div id = "contact">
-
-			</div>
-
-</div> <!--end grid container-->
 
 
 
